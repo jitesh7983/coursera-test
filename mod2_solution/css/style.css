@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+}
+
+.desktop {
+    float: left;
+    width: 33.33%;
+}
+
+.section-title {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 991px) {
+    .desktop {
+        width: 100%;
+        float: none;
+    }
+
+    .desktop:nth-child(3) {
+        clear: both;
+    }
+}
