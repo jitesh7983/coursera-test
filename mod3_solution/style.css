@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    min-height:100vh;
+    font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: antiquewhite;/*edit kiya h*/
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+
+}
+nav ul{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    color:black;
+}
+nav a:hover{
+    background-color: rgb(98, 91, 91);
+
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: absolute;/*edit kiya hai  fixed tha*/
+    margin-top: 6vh;/*edit kiya hai */
+    top:0;
+    right:0;
+    height:20vh;/*edit kiya hai */
+     width:100;/*edit kiya hai */
+    z-index:999;
+    background-color:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction:column;
+    align-items:flex center;/*edit kiya hai */
+    justify-content: flex-start;
+}
+.sidebar li{
+    width:100%;
+
+}
+.sidebar a{
+    width:100%;
+
+}
+.menu-button{
+    display:none;
+}
+a{
+    margin-top: 10px;
+}
+
+
+
+/* Page Heading styles */
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.desktop{
+    text-align: center;
+}
+
+section{
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 40px;
+
+}
+.section-title {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #555;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+}
+    body {
+        margin: 0;
+        font-family:  Arial, sans-serif ;
+
+    }
+
+/* Content Section styles */
+.container-fluid.bg-primary {
+    padding: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .collapse.navbar-collapse {
+        display: block;
+    }
+}
+
+
+
+@media(max-width: 1183px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
